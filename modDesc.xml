@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="115">
+    <author>FS Modding</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Hard Braking</en>
+        <de>Vollbremsung</de>
+        <fr>Freinage Brusque</fr>
+    </title>
+    <description>
+        <en><![CDATA[Slam the brakes and hear the tyres scream.
+
+- Brake hard at speed and the wheels lock up and the tyres screech, louder the faster you go
+- Black skid marks stay behind every wheel, also on trailers
+- Only on asphalt and concrete: no marks and no screech on fields, grass, gravel or dirt
+- Skid marks fade away after 30 minutes
+- Works for tractors, trucks, cars and every vehicle you drive. Helpers and crashes leave marks too
+
+CONSOLE
+- hbInfo: braking status and the surface under the vehicle
+- hbTest: skid for 3 seconds
+- hbClear: remove all skid marks
+- hbVolume 0..2: screech volume
+- hbSensitivity: how hard you must brake (default 2.5, lower = easier)
+
+Multiplayer supported.]]></en>
+        <de><![CDATA[Tritt voll in die Bremse und hör die Reifen quietschen.
+
+- Bremst du bei Tempo stark, blockieren die Räder und die Reifen quietschen, je schneller desto lauter
+- Schwarze Bremsspuren bleiben hinter jedem Rad, auch bei Anhängern
+- Nur auf Asphalt und Beton: keine Spuren und kein Quietschen auf Feldern, Gras, Schotter oder Erde
+- Bremsspuren verschwinden nach 30 Minuten
+- Funktioniert für Traktoren, LKW, Autos und jedes Fahrzeug, das du fährst. Helfer und Unfälle hinterlassen auch Spuren
+
+KONSOLE
+- hbInfo: Bremsstatus und Untergrund unter dem Fahrzeug
+- hbTest: 3 Sekunden rutschen
+- hbClear: alle Bremsspuren entfernen
+- hbVolume 0..2: Lautstärke des Quietschens
+- hbSensitivity: wie stark du bremsen musst (Standard 2.5, niedriger = leichter)
+
+Mehrspieler unterstützt.]]></de>
+        <fr><![CDATA[Écrasez la pédale de frein et entendez les pneus crisser.
+
+- Freinez fort en roulant vite et les roues se bloquent et les pneus crissent, plus fort quand vous allez plus vite
+- Des traces de freinage noires restent derrière chaque roue, aussi sur les remorques
+- Seulement sur l'asphalte et le béton : pas de traces ni de crissement dans les champs, l'herbe, le gravier ou la terre
+- Les traces disparaissent après 30 minutes
+- Fonctionne pour les tracteurs, camions, voitures et tous les véhicules que vous conduisez. Les ouvriers et les accidents laissent aussi des traces
+
+CONSOLE
+- hbInfo : état du freinage et surface sous le véhicule
+- hbTest : déraper 3 secondes
+- hbClear : effacer toutes les traces
+- hbVolume 0..2 : volume du crissement
+- hbSensitivity : force de freinage nécessaire (défaut 2.5, plus bas = plus facile)
+
+Multijoueur pris en charge.]]></fr>
+    </description>
+    <iconFilename>icon_HardBraking.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+        <sourceFile filename="hardbraking.lua"/>
+    </extraSourceFiles>
+</modDesc>
