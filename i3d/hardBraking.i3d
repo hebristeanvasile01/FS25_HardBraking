@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="hardBraking" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="FS Modding generator" version="1.0"/>
+  </Asset>
+  <Files>
+    <File fileId="1" filename="../textures/skidMark_diffuse.dds"/>
+  </Files>
+  <Materials>
+    <Material name="skidMark_mat" materialId="1" specularColor="0 1 0" alphaBlending="true">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+  <Shapes>
+    <IndexedTriangleSet name="skidMark" shapeId="1" bvCenter="0 0 0" bvRadius="0.7072">
+      <Vertices count="8" normal="true" uv0="true">
+        <v p="-0.5 0 -0.5" n="0 1 0" t0="0 0"/>
+        <v p="0.5 0 -0.5" n="0 1 0" t0="1 0"/>
+        <v p="0.5 0 0.5" n="0 1 0" t0="1 1"/>
+        <v p="-0.5 0 0.5" n="0 1 0" t0="0 1"/>
+        <v p="-0.5 0 -0.5" n="0 -1 0" t0="0 0"/>
+        <v p="0.5 0 -0.5" n="0 -1 0" t0="1 0"/>
+        <v p="0.5 0 0.5" n="0 -1 0" t0="1 1"/>
+        <v p="-0.5 0 0.5" n="0 -1 0" t0="0 1"/>
+      </Vertices>
+      <Triangles count="4">
+        <t vi="0 2 1"/>
+        <t vi="0 3 2"/>
+        <t vi="4 5 6"/>
+        <t vi="4 6 7"/>
+      </Triangles>
+      <Subsets count="1">
+        <Subset firstVertex="0" numVertices="8" firstIndex="0" numIndices="12"/>
+      </Subsets>
+    </IndexedTriangleSet>
+  </Shapes>
+  <Dynamics/>
+  <Scene>
+    <TransformGroup name="hardBraking" nodeId="10">
+      <Shape name="skidMark" shapeId="1" nodeId="11" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1"/>
+    </TransformGroup>
+  </Scene>
+</i3D>
